@@ -1,0 +1,424 @@
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Lato/Lato-Regular.ttf) format('truetype');
+}
+
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Lato/Lato-Bold.ttf) format('truetype');
+}
+
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    src: url(../fonts/Lato/Lato-Black.ttf) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Maven_Pro/MavenPro-Regular.ttf) format('truetype');
+}
+
+body {
+    overflow-y: scroll;
+}
+.container {
+    width: 1020px;
+    margin: 0 auto;
+}
+/*header*/
+nav ul li a.active {
+    color: #2eb398;
+}
+header {
+    background-color: #323232;
+    position: relative;
+    height: 63px;
+}
+nav ul li {
+    display: inline-block;
+    transform: translateY(-15.4px);
+
+}
+nav ul li:nth-of-type(1) {
+    margin-left: 326px;
+}
+nav ul li:nth-of-type(4n+2) {
+    margin: 0 7px;
+    background-color:  #494e62;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    transform: translateY(-17.4px);
+}
+nav ul li:nth-of-type(4) {
+    margin: 0 34px 0 34px;
+    transform: translateY(10px);
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Lato, serif;
+    font-size: 10px;
+    transition: 0.2s;
+}
+nav ul li a:hover {
+    color: #2eb398;
+    transition: 0.2s;
+}
+.logo {
+    background: url("../img/Logo.png");
+    width: 64px;
+    height: 55px;
+    position: relative;
+}
+.logo::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 26px 46px 0 46px;
+    border-color: #323232 transparent transparent transparent;
+    position: absolute;
+    bottom: -24px;
+    left: -13px;
+}
+.line {
+    width: 410px;
+    height: 1px;
+    background-color: #e4e9eb;
+    position: absolute;
+    top: 74px;
+}
+.left_line {
+    margin-left: 30px;
+}
+.right_line {
+    margin-left: 580px;
+}
+/*main*/
+/*gallery*/
+.hexagon {
+    width: 180px;
+    height: 206px;
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+}
+.first_row {
+    position: relative;
+    margin: 90px 0 0 120px;
+}
+.first_row::before, .third_row::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 104px;
+    background-color: #e4e9eb;
+    position: absolute;
+    left: -21px;
+    top: 51px;
+}
+.first_row::after, .third_row::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 104px;
+    background-color: #e4e9eb;
+    position: absolute;
+    right: 99px;
+    top: 51px;
+}
+.second_row {
+    margin: -41px 0 0 20px;
+}
+.third_row {
+    margin: -41px 0 0 120px;
+    position: relative;
+}
+.first_hexagon {
+    background: url("../img/first_hexagon.png") no-repeat;
+}
+.second_hexagon {
+    background: url("../img/second_hexagon.png") no-repeat;
+}
+.third_hexagon {
+    background: url("../img/third_hexagon.png") no-repeat;
+}
+.fourth_hexagon {
+    background: url("../img/fourth_hexagon.png") no-repeat;
+}
+.fifth_hexagon {
+    background: url("../img/fifth_hexagon.png") no-repeat;
+}
+.sixth_hexagon {
+    background: url("../img/sixth_hexagon.png") no-repeat;
+}
+.seventh_hexagon {
+    background: url("../img/seventh_hexagon.png") no-repeat;
+}
+.eighth_hexagon {
+    background: url("../img/eighth_hexagon.png") no-repeat;
+}
+.ninth_hexagon {
+    background: url("../img/ninth_hexagon.png") no-repeat;
+}
+.tenth_hexagon {
+    background: url("../img/tenth_hexagon.png") no-repeat;
+}
+.eleventh_hexagon {
+    background: url("../img/eleventh_hexagon.png") no-repeat;
+}
+.twelfth_hexagon {
+    background: url("../img/twelfth_hexagon.png") no-repeat;
+}
+.thirteenth_hexagon {
+    background: url("../img/thirteenth_hexagon.png") no-repeat;
+}
+.horizontal_line {
+    width: 960px;
+    height: 1px;
+    background-color: #e4e9eb;
+    margin: 8px auto 11px auto;
+}
+.controls {
+    margin: 50px 0 0 30px;
+}
+.controls li {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #ddd2c5;
+    margin-right: -1px;
+}
+.controls li.active {
+    background-color: #8b8784;
+}
+/*about*/
+.about {
+    background-color: #2eb398;
+    padding: 13px 0 12px 0;
+}
+.about_row {
+    margin: 0 99px;
+    padding: 55px 20px;
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
+    display: flex;
+}
+.image {
+    flex: 0 0 180px;
+    background: url("../img/Image.png") no-repeat;
+}
+.description {
+    flex: 0 0 581px;
+    margin-left: 19px;
+    margin-top: -3px;
+}
+h1 {
+    color: #d7fcf5;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+h2 {
+    color: #20816d;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.56px;
+    margin-bottom: 12px;
+}
+.description p {
+    color: #d7fcf5;
+    font-family: Lato, serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+    word-spacing: -1px;
+}
+.social_links {
+    margin: 34px 0 -3px 434px;
+}
+.social_link {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: -4px;
+    transition: 0.2s;
+}
+.social_link:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+.facebook {
+    background: url("../img/Facebook.png") no-repeat;
+    width: 25px;
+}
+.twitter {
+    background: url("../img/Twitter.png") no-repeat;
+}
+.google {
+    background: url("../img/Google.png") no-repeat;
+    width: 25px;
+}
+.pinterest {
+    background: url("../img/Pinterest.png") no-repeat;
+}
+.linkedin {
+    background: url("../img/Linkedin.png") no-repeat;
+    width: 25px;
+}
+.dribbble {
+    background: url("../img/Dribbble.png") no-repeat;
+}
+/*footer*/
+.contact {
+    background-color: #323232;
+    padding: 13px 0 11px 0;
+}
+.border {
+    margin: 0 30px;
+    border-top: 1px solid #2b2b2b;
+    border-bottom: 1px solid #2b2b2b;
+}
+h3 {
+    color: #e0e0e0;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 91px;
+    margin-top: 50px;
+}
+h4 {
+    color: #bebebe;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 91px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+.contact_row {
+    padding: 0 89px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_form {
+    flex: 0 0 580px;
+    margin-top: 5px;
+}
+.contact_form form input, .contact_form form textarea {
+    width: 100%;
+    background-color: #454545;
+    margin-bottom: 16px;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px 0 10px 14px;
+}
+.contact_form form textarea {
+    height: 150px;
+    resize: none;
+}
+.contact_form form input::placeholder, .contact_form form textarea::placeholder {
+    color: #bebebe;
+    font-family: Lato, serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+.contact_form form input::-ms-input-placeholder, .contact_form form textarea::-ms-input-placeholder {
+    color: #bebebe;
+    font-family: Lato, serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+.contact_form form input[type="submit"] {
+    width: 90px;
+    height: 37px;
+    background-color: #2eb398;
+    color: #d7fcf5;
+    font-family: Lato, serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+    margin-left: 490px;
+    margin-bottom: 53px;
+
+}
+
+.contacts {
+    flex: 0 0 180px;
+}
+
+.contacts p {
+    color: #bebebe;
+    font-family: Lato, serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+    margin-bottom: 41px;
+    text-align: justify;
+}
+.contacts p span {
+    color: #e0e0e0;
+    font-family: Lato, serif;
+    font-weight: 900;
+}
+.location, .phone, .mail {
+    color: #bebebe;
+    font-family: Lato, serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 0;
+    margin-bottom: 9px;
+}
+.location::before, .phone a::before, .mail a::before {
+    content: "";
+    background: url("../img/location.png") no-repeat;
+    width: 7px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.phone a::before {
+    background: url("../img/phone.png") no-repeat;
+    width: 11px;
+    margin-right: 13px;
+    margin-left: -2px;
+}
+.phone a, .mail a {
+    color: inherit;
+    text-decoration: none;
+}
+.mail a::before {
+    background: url("../img/mail.png") no-repeat;
+    width: 13px;
+    height: 8px;
+    margin-right: 11px;
+    margin-left: -2px;
+}
+.copyright {
+    height: 43px;
+    background-color: #222222;
+}
+.copyright p {
+    color: #454545;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 16px 0 0 39px;
+}
+
